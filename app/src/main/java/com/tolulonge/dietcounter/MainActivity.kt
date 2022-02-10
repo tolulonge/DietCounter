@@ -25,6 +25,7 @@ import com.tolulonge.dietcounter.ui.theme.DietCounterTheme
 import com.tolulonge.onboarding_presentation.activity.ActivityScreen
 import com.tolulonge.onboarding_presentation.age.AgeScreen
 import com.tolulonge.onboarding_presentation.gender.GenderScreen
+import com.tolulonge.onboarding_presentation.goal.GoalScreen
 import com.tolulonge.onboarding_presentation.height.HeightScreen
 import com.tolulonge.onboarding_presentation.nutrient_goal.NutrientGoalScreen
 import com.tolulonge.onboarding_presentation.weight.WeightScreen
@@ -79,7 +80,9 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(GOAL){
-
+                            GoalScreen(
+                                onNavigate = navController::navigate
+                            )
                         }
                         composable(TRACKER_OVERVIEW){
 
