@@ -1,4 +1,4 @@
-package com.plcoding.onboarding_presentation.components
+package com.tolulonge.onboarding_presentation.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

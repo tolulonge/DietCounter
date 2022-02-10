@@ -1,4 +1,4 @@
-package com.plcoding.onboarding_presentation.components
+package com.tolulonge.onboarding_presentation.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.BasicTextField

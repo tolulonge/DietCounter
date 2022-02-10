@@ -35,7 +35,7 @@ fun WelcomeScreen(
         Spacer(modifier = Modifier.height(spacing.spaceMedium))
         ActionButton(
             text = stringResource(id = R.string.next),
-            onClick = { /*onNextClick()*/ onNavigate(UiEvent.Navigate(Route.AGE))},
+            onClick = { /*onNextClick()*/ onNavigate(UiEvent.Navigate(Route.GENDER))},
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
     }
