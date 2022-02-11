@@ -9,7 +9,6 @@ import com.tolulonge.core.domain.preferences.Preferences
 import com.tolulonge.core.util.UiEvent
 import com.tolulonge.core.util.UiText
 import com.tolulonge.core.R
-import com.tolulonge.core.navigation.Route
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
@@ -44,7 +43,7 @@ class WeightViewModel @Inject constructor(
                 return@launch
             }
             preferences.saveWeight(weightNumber)
-            _uiEvent.send(UiEvent.Navigate(Route.ACTIVITY))
+            _uiEvent.send(UiEvent.Success)
         }
     }
 }

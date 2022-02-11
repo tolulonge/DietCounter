@@ -1,4 +1,4 @@
-package com.tolulonge.core.navigation
+package com.tolulonge.dietcounter.navigation
 
 object Route {
     const val WELCOME = "welcome"

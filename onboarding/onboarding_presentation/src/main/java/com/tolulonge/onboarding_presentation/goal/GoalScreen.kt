@@ -21,15 +21,14 @@ import kotlinx.coroutines.flow.collect
 
 @Composable
 fun GoalScreen(
-   /* onNextClick: () -> Unit,*/
-    onNavigate: (UiEvent.Navigate) -> Unit,
+   onNextClick: () -> Unit,
     viewModel: GoalViewModel = hiltViewModel()
 ) {
     val spacing = LocalSpacing.current
     LaunchedEffect(key1 = true) {
         viewModel.uiEvent.collect { event ->
             when (event) {
-                is UiEvent.Navigate -> onNavigate(event)
+                is UiEvent.Success -> onNextClick()
                 else -> Unit
             }
         }

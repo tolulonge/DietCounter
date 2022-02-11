@@ -10,7 +10,6 @@ import com.tolulonge.core.domain.use_case.FilterOutDigits
 import com.tolulonge.core.util.UiEvent
 import com.tolulonge.core.util.UiText
 import com.tolulonge.core.R
-import com.tolulonge.core.navigation.Route
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
@@ -46,7 +45,7 @@ class AgeViewModel @Inject constructor(
                 return@launch
             }
             preferences.saveAge(ageNumber)
-            _uiEvent.send(UiEvent.Navigate(Route.HEIGHT))
+            _uiEvent.send(UiEvent.Success)
         }
     }
 }
