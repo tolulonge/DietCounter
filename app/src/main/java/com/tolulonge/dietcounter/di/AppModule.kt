@@ -24,11 +24,13 @@ object AppModule {
         return app.getSharedPreferences("shared_pref", MODE_PRIVATE)
     }
 
+
     @Provides
     @Singleton
     fun providePreferences(sharedPreferences: SharedPreferences): Preferences {
         return DefaultPreferences(sharedPreferences)
     }
+
 
     @Provides
     @Singleton
